@@ -1,0 +1,39 @@
+extends layout.pug
+
+block midNavBar
+    a(class="brand-logo white-text center" id="user")
+
+block content
+    .section 
+    .section
+    .container
+    if messages.error
+        .alert.alert-danger
+            div= messages.error
+    if messages.info
+        .alert.alert-info
+            div= messages.info
+    if messages.success
+        .alert.alert-success
+            div= messages.success
+
+    center
+        h5.TitleWP.SecundaryText.text-lighten-2 Please, insert your email
+        .section
+        .container
+            .z-depth-1.lighten-4.row.NavBarWP.log_in
+                form.col.s12(class="register" method="post" action="/forgot" id="submit")
+                    .row
+                        .col.s12
+                    .row
+                        .input-field.col.s12
+                            input#autocomplete-input.autocomplete.white-text(type="text" name="email")
+                            label(for="autocomplete-input") Enter a Email
+                    br
+                    center
+                        .row
+                            button.col.s12.btn.btn-large.waves-effect.waves-light.grey.darken-4(type="submit" name="btn_login") Send
+        a(href="#!") Create account
+    .section
+    .section
+block script

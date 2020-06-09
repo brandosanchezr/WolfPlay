@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>WofPlay</title>
+
+  <!-- CSS  -->
+  <link href="../stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../stylesheets/responsive.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  
+</head>
+<body>
+  
+  <nav class="NavBarWP" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="./" class="brand-logo white-text"><img src="../images/LogoS.png"></a>
+        <ul class="right hide-on-med-and-down">
+          <!--li><a href="#" data-target="slide-out" class="sidenav-trigger white-text show-on-large button-collapse">Perfil</a></li-->
+        </ul>
+      </div>
+  </nav>
+  
+  <div id="index-banner" class="parallax-container content">
+      <main>
+        <center>
+          <h5 class="TitleWP SecundaryText text-lighten-2">Please, login into your account</h5>
+          <div class="section"></div>
+
+          <div class="container">
+            <div class="z-depth-1 lighten-4 row NavBarWP log_in">
+              <form class="col s12" method="post" action="/login">
+                <div class='row'>
+                  <div class='col s12'>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s12">
+                    <!--i class="material-icons prefix">textsms</i-->
+                    <input class="autocomplete white-text" type="text" name = "gamer" id="autocomplete-input" >
+                    <label for="autocomplete-input">Enter your Game Tag</label>
+                  </div>
+                </div>
+
+                <div class='row'>
+                  <div class='input-field col s12'>
+                    <input class = "validate white-text" type='password' name='password' id='password' />
+                    <label for='password'>Enter your password</label>
+                  </div>
+                  
+
+                  <label style='float: right;'>
+                    <a class ='SecundaryText' href='/forgot'><b>Forgot Password?</b></a>
+                  </label>
+
+                  <div class='input-field col s12'></div>
+                </div>
+
+                <br />
+                <center>
+                  <div class='row'>
+                    <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect waves-light grey darken-4'>Login</button>
+                  </div>
+                </center>
+              </form>
+            </div>
+          </div>
+          <a href="/register">Create account</a>
+        </center>
+
+        <div class="section"></div>
+        <div class="section"></div>
+      </main>
+      <div class="section"></div>
+      <div class="section"></div>
+  </div>
+  
+
+  
+  <footer class="page-footer ">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="">Materialize</a>
+      <a href='https://www.freepik.com/free-vector/abstract-colorful-geometric-polygon-modern-background_1970967.htm'>Designed by Freepik</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script type='text/javascript' src='../javascripts/jquery-3.3.1.min.js'></script>
+  <script src="../javascripts/materialize.js"></script>
+  <script src="../javascripts/home/initHome.js"></script>
+  <script src="../javascripts/home/sideNav.js"></script>
+
+  </body>
+</html>

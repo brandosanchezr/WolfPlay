@@ -1,0 +1,47 @@
+extends layout.pug
+block head
+
+block content
+    main
+        center
+            h5.TitleWP.SecundaryText.text-lighten-2 Programa 1 probabilidad
+                .section
+                .container
+                    .z-depth-1.lighten-4.row.NavBarWP.log_in
+                        form.col.s12(class = "integrate" method="post" action="/home/proba" id="submit")
+                            .row
+                                .input-field.col.s12
+                                    input.white-text#numA(name="numA" type="number")
+                                    label() Ingresa a
+                                .l    
+                                    label
+                                        input.white-text#numAi(type="checkbox" name="numAi")
+                                        span
+                                            |less infinity
+                            .row
+                                .input-field.col.s12
+                                    input.white-text#numB(type="number" name="numB")
+                                    label() Ingresa b
+                                .l
+                                    label
+                                        input.white-text#numBi(type="checkbox" name="numBi")
+                                        span
+                                            |infinity
+                            .row
+                                .input-field.col.s12
+                                    input.white-text#numR(type="number" step=".001" name="numR")
+                                    label() Ingresa &sigma;
+                            .row
+                                .input-field.col.s12
+                                    input.white-text#numM(type="number" step=".001" name="numM")
+                                    label() Ingresa &mu;        
+                            br
+                            center
+                                .row
+                                    button.col.s12.btn.btn-large.waves-effect.waves-light.grey.darken-4#submit(type="submit" name="btn_login") Calcular
+            .container.SecundaryText.text-lighten-2
+                .z-depth-1.lighten-4.row.NavBarWP.log_in
+                    .row.Resultado(id = "Result")
+                        |Resultado: 
+block script
+    script(src='../javascripts/home/initProba.js')

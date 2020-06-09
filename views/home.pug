@@ -1,0 +1,24 @@
+extends layout.pug
+
+block midNavBar
+    a(class="brand-logo white-text center hide-on-small-only" id="user") Welcome #{user}
+
+block content
+    .quart-fixer
+    .carousel
+        a.carousel-item(href="")
+            img.img_C(src="../images/Logo.svg")
+        a.carousel-item(href="home/minesweeper")
+            img.img_C(src="../images/minesweeper-game.svg")
+        a.carousel-item(href="home/flappybird")
+            img.img_C(src="../images/flappyBird-game.svg")
+        a.carousel-item(href="home/A_F")
+            img.img_C(src="../images/A_F.svg")
+        a.carousel-item(href="home/F_T")
+            img.img_C(src="../images/F_T.svg")
+        a.carousel-item(href="home/snake")
+            img.img_C(src="../images/snake-game.svg")
+    .quart-fixer
+    
+block script
+    script(src="../javascripts/home/initHome.js")
