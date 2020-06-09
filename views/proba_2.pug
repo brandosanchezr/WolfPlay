@@ -1,0 +1,51 @@
+extends layout.pug
+block head
+
+block content
+
+    .container.SecundaryText.text-lighten-2#cargandoDiv
+        .z-depth-1.lighten-4.row.NavBarWP.log_in
+            .row
+                |Cargando archivos, por favor espere a que desaparezca este mensaje
+    h5.header.center.SecundaryText.text-lighten-2.TitleWP Busqueda del área dado el valor estandar z
+    .container.SecundaryText.text-lighten-2
+        .z-depth-1.lighten-4.row.NavBarWP.log_in
+            .column
+                .row
+                    .input-field.col.s12
+                        input.white-text(name="numA" type="number" id='z')
+                        label() Ingresa z max
+                .row#Cargando
+                    label() Resultado
+            .column
+                .row
+                    .input-field.col.s12
+                        input.white-text(name="numA" type="number" id='z_2')
+                        label() Ingresa z min
+                .row#Cargando_2
+                    label() Resultado
+            .row
+                center
+                    .row
+                        button.col.s12.btn.btn-large.waves-effect.waves-light.grey.darken-4#submit(onclick="search()" name="btn_login") Calcular     
+    .container.SecundaryText.text-lighten-2
+        .z-depth-1.lighten-4.row.NavBarWP.log_in
+            .row#Cargando_R
+                 label() Resultado de la resta de áreas
+    .section
+
+    h5.header.center.SecundaryText.text-lighten-2.TitleWP Busqueda del valor estandar z dado el área 
+    .container.SecundaryText.text-lighten-2
+        .z-depth-1.lighten-4.row.NavBarWP.log_in
+            .row
+                .input-field.col.s12
+                    input.white-text(type="number" id='i')
+                    label() Ingresa i max
+            .row#Cargando_i
+                label() Resultado
+            .row
+                center
+                    .row
+                        button.col.s12.btn.btn-large.waves-effect.waves-light.grey.darken-4#submit(onclick="search_2()" name="btn_login_") Calcular
+block script
+    script(src='../javascripts/home/initProba_2.js')

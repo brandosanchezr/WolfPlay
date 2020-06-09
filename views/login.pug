@@ -1,0 +1,53 @@
+extends layout.pug
+
+block midNavBar
+    a(href="#" class="brand-logo center" id="score")
+
+block content
+    .section 
+    .section
+    .container
+    if messages.error
+        .alert.alert-danger
+            div= messages.error
+    if messages.info
+        .alert.alert-info
+            div= messages.info
+    if messages.success
+        .alert.alert-success
+            div= messages.success
+
+    main
+      center
+        h5.TitleWP.SecundaryText.text-lighten-2 Please, login into your account
+        .section
+        .container
+          .z-depth-1.lighten-4.row.NavBarWP.log_in
+            form.col.s12(method="post" action="/login" id="submit")
+              .row
+                .col.s12
+              .row
+                .input-field.col.s12
+                  // i class="material-icons prefix">textsms</i
+                  input#autocomplete-input.autocomplete.white-text(type="text" name="gamer")
+                  label(for="autocomplete-input") Enter your Game Tag
+              .row
+                .input-field.col.s12
+                  input#password.white-text(type="password" name="password")
+                  label(for="password") Enter your password
+                label(style="float: right;")
+                  a.SecundaryText(href="/forgot")
+                    b Forgot Password?
+                .input-field.col.s12
+              br
+              center
+                .row
+                  button.col.s12.btn.btn-large.waves-effect.waves-light.grey.darken-4(type="submit" name="btn_login") Login
+        a(href="/register") Create account
+      .section
+      .section
+    .section
+    .section
+
+block script
+    script(src="../javascripts/home/initHome.js")

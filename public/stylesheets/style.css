@@ -1,0 +1,288 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ @font-face {
+  font-family: "moonhouse"; src:  url("../fonts/moonhouse.ttf");
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+/* label focus color */
+.input-field input:focus + label {
+  color:  #fafafa !important;
+}
+
+.row .input-field .invalid input{
+    border-bottom: 1px solid red !important;
+    box-shadow: 0 1px 0 0 red !important;
+}
+
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #fafafa !important;
+  box-shadow: 0 1px 0 0 #fafafa !important;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 600px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  
+}
+
+#particles{
+  background-color:#263238;
+}
+
+.img_C {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#WelcomeDiv{
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(10%);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+.tenpx{
+  height: 40px;
+}
+
+.log_in{
+  display: inline-block; 
+  padding: 32px 48px 0px 48px;
+}
+.section {
+  padding-top: 0%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+.fixer{
+    height:40vh;
+}
+.mid-fixer{
+    height:20vh;
+}
+.quart-fixer{
+    height:10vh;
+}
+
+@media only screen and (min-width : 600px) {
+    .carousel .carousel-item {
+        height: 100%;
+        width: 30%;
+    }
+    .parallax-container{
+        text-align: center;
+    }
+
+    .gameHolder{
+        padding-top: 1%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        height: 30%;
+        width: 50%;
+        margin: -15% 0 0 -25%;
+    }
+}
+
+
+@media screen and (min-width: 1600px) {
+
+}
+
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+    #logo-container{
+        padding-top: 5%;
+        padding-left: 5%;
+        height: 40px;
+        width:auto; /* you can use % */
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer{
+    margin: 0;
+    background-color: #000a12;
+}
+
+.dark{
+    margin: 0;
+    background-color: #000a12;
+}
+
+.PrimaryText{
+  color: #212121 !important;
+}
+
+.content{
+  background-color: #263238 !important;
+}
+
+.SecundaryText{
+  color: #90A4AE !important;
+}
+
+.SecBG{
+  background-color: #90A4AE !important;
+}
+
+.NavBarWP{
+  background-color: #000a12 !important;; 
+}
+
+.TitleWP{
+  font-family: moonhouse;
+
+}
+
+.Sfont{
+  font-family: moonhouse;
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+  height: 142px; /* .push must be the same height as .footer */
+}
+
+.gameBox{
+    padding-top: 25%;
+    padding-right: 50%;
+    padding-bottom: 50%;
+    padding-left: 50%;
+}
+.outer{
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.inputRow{
+  display: inline-block;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+#score{
+    color: #adad32;
+}
+
+/* The alert message box */
+.alert {
+    padding: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.alert-danger{
+    color:#fff!important;
+    background-color:#f44336!important
+}
+
+.alert-info{
+    color:#fff!important;
+    background-color:#607d8b!important
+}
+
+.alert-success{
+    color:#fff!important;
+    background-color:#4CAF50!important
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+.btn-floating{
+    color:#757575 !important;
+}
+
+.smallybanner{
+    min-height: 500px !important;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background-color: #90A4AE;
+  }
+  input[type=range]::-moz-range-thumb {
+    background-color: #90A4AE;
+  }
+  input[type=range]::-ms-thumb {
+    background-color: #90A4AE;
+  }
+
+  /***** These are to edit the thumb and the text inside the thumb *****/
+  input[type=range] + .thumb {
+    background-color: #90A4AE;
+  }
