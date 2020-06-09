@@ -1,0 +1,29 @@
+extends layout.pug
+
+block midNavBar
+    a(href="#" class="brand-logo center" id="score")
+
+block content
+    center
+        h5.TitleWP.SecundaryText.text-lighten-2 Enter a new password
+        .section
+        .container
+            .z-depth-1.lighten-4.row.NavBarWP.log_in
+                form.col.s12(class="register" method="post" id="submit")
+                    .row
+                        .col.s12
+                    .row
+                        .input-field.col.s12
+                            input#autocomplete-input.autocomplete.white-text(type="text" name="password")
+                            label(for="autocomplete-input")  New Password
+                    .row
+                        .input-field.col.s12
+                            input#autocomplete-input.autocomplete.white-text(type="text" name="confirm")
+                            label(for="autocomplete-input") Confirm Password
+                    br
+                    center
+                        .row
+                            button.col.s12.btn.btn-large.waves-effect.waves-light.grey.darken-4(type="submit" name="btn_login") Send
+        a(href="#!") Create account
+    .section
+block script

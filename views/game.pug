@@ -1,0 +1,32 @@
+extends layout.pug
+block head
+    script(async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
+    script|(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-4557842483609533",enable_page_level_ads: true});
+block midNavBar
+    a(href="#" class="brand-logo center" id="score")
+
+block content
+    div(id= "gameHolder" class= "gameHolder")
+    .tap-target(data-target='control').grey.darken-3
+        .tap-target-content
+            h5 Controlls
+            if title=='snake'   
+                p Usa la teclas A, S, D, W para moverte//Use A, S, D, W To move the charcater
+            else if title=='minesweeper'
+                p Con el mause selcciona la celda para revelarla // Select with the mouse a cell to reveal it.
+            else if title=='minesweeper'
+                p Usa la barra espaciadora para saltar // Use space bar to move
+    
+    #control.fixed-action-btn(onclick="$('.tap-target').tapTarget('open')")
+        a.btn-floating.btn-large.grey.darken-3
+            i.large.material-icons videogame_asset
+
+block footer
+    if thanks
+        a Thanks to #{thanks} 
+block script
+    script(src='../javascripts/game/initGame.js')
+    script(src="../javascripts/p5/p5/p5.min.js")
+    script(src="../javascripts/p5/p5/addons/p5.dom.min.js")
+    script(src="../javascripts/" + title + "/" + title + "C.js")
+    script(src="../javascripts/" + title + "/" + title + ".js")
