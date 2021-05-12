@@ -24,7 +24,7 @@
     "express-validator": "^5.2.0",
     "helmet": "^3.22.0",
     "http-errors": "~1.6.2",
-    "mathjs": "^4.4.1",
+    "mathjs": "^7.5.1",
     "mongoose": "^5.9.13",
     "morgan": "^1.9.1",
     "nodemailer": "^4.6.4",
