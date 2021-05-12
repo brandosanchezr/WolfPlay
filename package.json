@@ -27,7 +27,7 @@
     "mathjs": "^4.4.1",
     "mongoose": "^5.9.13",
     "morgan": "^1.9.1",
-    "nodemailer": "^4.6.4",
+    "nodemailer": "^6.4.16",
     "npm": "^6.14.5",
     "pug": "^2.0.4",
     "serve-favicon": "^2.5.0"
